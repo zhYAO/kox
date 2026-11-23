@@ -1,0 +1,60 @@
+.overview-kpi-card {
+  border-radius: 12px;
+  height: 100%;
+}
+
+.overview-kpi-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.overview-kpi-value {
+  margin: 10px 0 6px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.overview-kpi-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.tone-task {
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.1);
+}
+
+.tone-user {
+  color: #13c2c2;
+  background: rgba(19, 194, 194, 0.1);
+}
+
+.tone-content {
+  color: #722ed1;
+  background: rgba(114, 46, 209, 0.1);
+}
+
+.tone-voice {
+  color: #fa8c16;
+  background: rgba(250, 140, 22, 0.1);
+}
+
+.tone-points {
+  color: #eb2f96;
+  background: rgba(235, 47, 150, 0.1);
+}
+
+.tone-ads {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.1);
+}

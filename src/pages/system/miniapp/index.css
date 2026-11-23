@@ -1,0 +1,130 @@
+.miniapp-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.miniapp-title {
+  margin: 0 0 8px !important;
+}
+
+.miniapp-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.miniapp-hint {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.miniapp-banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.miniapp-banner-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.miniapp-banner-item:hover {
+  background: #e6f4ff;
+  border-color: #91caff;
+}
+
+.miniapp-thumb {
+  width: 120px;
+  height: 68px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.miniapp-thumb.square {
+  width: 56px;
+  height: 56px;
+}
+
+.miniapp-thumb.wide {
+  width: 96px;
+  height: 48px;
+}
+
+.miniapp-banner-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.miniapp-banner-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.miniapp-upload-box {
+  width: 96px;
+  height: 96px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.miniapp-upload-box:hover {
+  border-color: #1677ff;
+  color: #1677ff;
+}
+
+.miniapp-upload-preview {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.miniapp-weight-info {
+  padding: 12px 14px;
+  background: #e6f4ff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.miniapp-rule-box {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.8;
+  font-size: 13px;
+}

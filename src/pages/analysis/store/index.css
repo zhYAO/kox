@@ -1,0 +1,27 @@
+.store-analysis {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-main-card.ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.store-tab-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}

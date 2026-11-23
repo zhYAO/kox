@@ -1,0 +1,44 @@
+.brand-structure-page {
+  display: flex;
+  gap: 16px;
+  min-height: calc(100vh - 160px);
+}
+
+.brand-structure-sider {
+  width: 280px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand-structure-main {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  padding: 16px 20px;
+}
+
+.brand-structure-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 16px;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .brand-structure-page {
+    flex-direction: column;
+  }
+
+  .brand-structure-sider {
+    width: 100%;
+  }
+}

@@ -1,0 +1,150 @@
+.kos-overview-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kos-section-card.ant-card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+}
+
+.kos-section-title {
+  margin-bottom: 16px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.kos-account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .kos-account-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kos-account-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: none;
+}
+
+.kos-account-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.kos-account-icon.is-blue {
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.12);
+}
+
+.kos-account-icon.is-orange {
+  color: #fa8c16;
+  background: rgba(250, 140, 22, 0.12);
+}
+
+.kos-account-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.kos-account-value {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.kos-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1200px) {
+  .kos-kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .kos-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.kos-kpi-item {
+  padding: 14px 16px;
+  background: #fafafa;
+  border: none;
+  border-radius: 8px;
+}
+
+.kos-kpi-label {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.kos-kpi-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.kos-rank-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.kos-user-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kos-cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kos-metric-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.65);
+}

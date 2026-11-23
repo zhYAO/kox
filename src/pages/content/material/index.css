@@ -1,0 +1,146 @@
+.material-page {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.material-group-panel {
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+}
+
+.material-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.material-group-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.75);
+  transition: background 0.2s, color 0.2s;
+}
+
+.material-group-item:hover {
+  background: rgba(22, 119, 255, 0.06);
+}
+
+.material-group-item.is-active {
+  background: rgba(22, 119, 255, 0.1);
+  color: #1677ff;
+  font-weight: 500;
+}
+
+.material-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.material-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.material-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.material-card:hover,
+.material-card.is-selected {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.material-card.is-selected {
+  border-color: #1677ff;
+}
+
+.material-cover {
+  position: relative;
+  height: 150px;
+  cursor: pointer;
+  background: #f5f5f5;
+}
+
+.material-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.material-type-tag {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  margin: 0;
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  border: none;
+}
+
+.material-group-tag {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  margin: 0;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.material-cover-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.material-check {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 22px;
+  color: #1677ff;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.material-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px 12px;
+}
+
+@media (max-width: 960px) {
+  .material-page {
+    flex-direction: column;
+  }
+
+  .material-group-panel {
+    width: 100%;
+    position: static;
+  }
+}

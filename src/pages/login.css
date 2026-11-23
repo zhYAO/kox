@@ -1,0 +1,114 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 520px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.12)),
+    linear-gradient(135deg, #081120 0%, #0e2345 42%, #ced8ea 100%);
+}
+
+.login-visual {
+  position: relative;
+  overflow: hidden;
+}
+
+.login-visual::before {
+  content: '';
+  position: absolute;
+  left: -12%;
+  top: -8%;
+  width: 88%;
+  height: 120%;
+  background:
+    radial-gradient(circle at 35% 55%, rgba(255, 255, 255, 0.15), transparent 28%),
+    linear-gradient(145deg, rgba(7, 18, 33, 0.98) 0%, rgba(14, 39, 74, 0.94) 44%, rgba(41, 100, 184, 0.65) 70%, rgba(191, 209, 237, 0.2) 100%);
+  border-radius: 60% 20% 45% 55% / 55% 35% 50% 45%;
+  transform: rotate(12deg);
+  filter: blur(0.2px);
+  box-shadow:
+    0 0 80px rgba(11, 28, 59, 0.28),
+    inset -32px -24px 60px rgba(10, 16, 28, 0.4);
+}
+
+.login-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
+    radial-gradient(circle at 40% 62%, rgba(255, 255, 255, 0.1), transparent 18%);
+}
+
+.login-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.login-card {
+  width: min(100%, 430px);
+  min-height: 520px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+  padding: 56px 42px 44px;
+}
+
+.login-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.login-logo {
+  width: 156px;
+  height: 54px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: #1579d3;
+  background:
+    linear-gradient(90deg, rgba(21, 121, 211, 0.14), rgba(21, 121, 211, 0.02)),
+    #fff;
+  border: 1px solid rgba(21, 121, 211, 0.12);
+}
+
+.login-copy {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.login-submit {
+  margin-top: 6px;
+  height: 44px;
+  border-radius: 22px;
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-visual {
+    min-height: 220px;
+  }
+
+  .login-panel {
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .login-card {
+    margin-top: -72px;
+    width: min(100%, 430px);
+  }
+}
+

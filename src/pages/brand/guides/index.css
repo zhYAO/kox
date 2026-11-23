@@ -1,0 +1,61 @@
+.brand-guides-page {
+  display: flex;
+  gap: 16px;
+  min-height: calc(100vh - 160px);
+}
+
+.brand-guides-sider {
+  width: 280px;
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand-guides-sider-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-guides-main {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.brand-guides-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 8px;
+  align-items: center;
+}
+
+.brand-guides-hint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .brand-guides-page {
+    flex-direction: column;
+  }
+
+  .brand-guides-sider {
+    width: 100%;
+  }
+}

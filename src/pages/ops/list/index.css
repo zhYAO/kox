@@ -1,0 +1,105 @@
+.ops-page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ops-stat-card {
+  border-radius: 12px;
+  height: 100%;
+}
+
+.ops-stat-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ops-stat-value {
+  margin: 8px 0 4px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.ops-stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.tone-blue .ops-stat-icon {
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.1);
+}
+
+.tone-cyan .ops-stat-icon {
+  color: #13c2c2;
+  background: rgba(19, 194, 194, 0.1);
+}
+
+.tone-orange .ops-stat-icon {
+  color: #fa8c16;
+  background: rgba(250, 140, 22, 0.1);
+}
+
+.tone-purple .ops-stat-icon {
+  color: #722ed1;
+  background: rgba(114, 46, 209, 0.1);
+}
+
+.tone-green .ops-stat-icon {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.1);
+}
+
+.ops-create-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ops-create-body {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.ops-create-left {
+  flex: 1.4;
+  min-width: 0;
+}
+
+.ops-create-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ops-staff-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.ops-filter-chip {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 960px) {
+  .ops-create-body {
+    flex-direction: column;
+  }
+}

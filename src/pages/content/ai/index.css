@@ -1,0 +1,138 @@
+.ai-studio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ai-step-card {
+  min-height: 420px;
+}
+
+.ai-note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ai-note-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ai-note-card:hover,
+.ai-note-card.is-checked {
+  border-color: #1677ff;
+  box-shadow: 0 2px 10px rgba(22, 119, 255, 0.08);
+}
+
+.ai-note-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ai-note-meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.ai-footer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ai-panel {
+  background: #f7f8fa;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 420px;
+}
+
+.ai-panel-sticky {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-analyzing {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ai-analysis-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ai-analysis-tabs button {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+  position: relative;
+}
+
+.ai-analysis-tabs button.is-active {
+  color: #1677ff;
+  font-weight: 500;
+}
+
+.ai-analysis-tabs button.is-active::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -1px;
+  height: 2px;
+  background: #1677ff;
+}
+
+.ai-result-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.ai-result-list {
+  flex: 1;
+  min-width: 0;
+}
+
+.ai-result-card {
+  border-radius: 10px;
+}
+
+.ai-result-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 992px) {
+  .ai-result-layout {
+    flex-direction: column;
+  }
+}

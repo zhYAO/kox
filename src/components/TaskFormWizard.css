@@ -1,0 +1,27 @@
+.task-form-wizard {
+  padding-bottom: 80px;
+}
+
+.task-form-cover {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.task-form-footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: 24px;
+  padding: 16px 0;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}

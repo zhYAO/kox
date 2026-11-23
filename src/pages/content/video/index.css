@@ -1,0 +1,215 @@
+.video-studio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.video-tabs button {
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.video-tabs button.is-active {
+  border-color: #1677ff;
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.06);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.video-create-card {
+  min-height: 210px;
+  border: 1px dashed #91caff;
+  border-radius: 12px;
+  background: #f0f7ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.video-create-card:hover {
+  box-shadow: 0 4px 14px rgba(22, 119, 255, 0.12);
+}
+
+.video-task-card.ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.video-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.video-create-page,
+.video-task-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.video-workflow {
+  margin-top: 8px;
+}
+
+.video-upload-box {
+  margin-top: 16px;
+  border: 1px dashed #91caff;
+  border-radius: 12px;
+  background: #fafcff;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.video-task-body {
+  display: flex;
+  gap: 16px;
+  min-height: 560px;
+}
+
+.video-side-menu {
+  width: 180px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.video-player-panel {
+  flex: 1;
+  min-width: 0;
+  background: #111;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+}
+
+.video-phone-frame {
+  width: min(320px, 100%);
+  aspect-ratio: 9 / 16;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #1f1f1f, #000);
+  border: 2px solid #333;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-phone-media {
+  flex: 1;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)),
+    linear-gradient(135deg, #722ed1, #1677ff 45%, #13c2c2);
+  padding: 24px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.video-phone-media h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #ff4d4f;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.video-phone-media .highlight {
+  color: #ffe58f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.video-phone-meta {
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.video-phone-controls {
+  height: 36px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+}
+
+.video-phone-controls .bar {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: #444;
+  overflow: hidden;
+}
+
+.video-phone-controls .bar > span {
+  display: block;
+  width: 35%;
+  height: 100%;
+  background: #1677ff;
+}
+
+@media (max-width: 960px) {
+  .video-task-body {
+    flex-direction: column;
+  }
+
+  .video-side-menu {
+    width: 100%;
+  }
+}

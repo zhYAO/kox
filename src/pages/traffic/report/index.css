@@ -1,0 +1,86 @@
+.traffic-report-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.traffic-report-body {
+  display: flex;
+  gap: 16px;
+  min-height: calc(100vh - 220px);
+}
+
+.traffic-report-sider {
+  width: 260px;
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.traffic-report-sider-block-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.traffic-report-chip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.traffic-report-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.traffic-report-main {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.traffic-report-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.traffic-report-toolbar-left,
+.traffic-report-toolbar-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.traffic-report-title {
+  margin: 0 !important;
+}
+
+@media (max-width: 960px) {
+  .traffic-report-body {
+    flex-direction: column;
+  }
+
+  .traffic-report-sider {
+    width: 100%;
+  }
+}

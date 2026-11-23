@@ -1,0 +1,60 @@
+.quality-stat-card.ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.quality-stat-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.quality-stat-value {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.quality-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.tone-blue .quality-stat-icon {
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.1);
+}
+
+.tone-green .quality-stat-icon {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.1);
+}
+
+.tone-orange .quality-stat-icon {
+  color: #fa8c16;
+  background: rgba(250, 140, 22, 0.1);
+}
+
+.tone-purple .quality-stat-icon {
+  color: #722ed1;
+  background: rgba(114, 46, 209, 0.1);
+}
+
+.quality-section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 0 16px;
+}

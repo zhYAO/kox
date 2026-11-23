@@ -1,0 +1,104 @@
+.budget-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.budget-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.budget-kpi.ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.budget-kpi-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.budget-kpi-value {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.budget-kpi-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.tone-purple .budget-kpi-icon {
+  color: #722ed1;
+  background: rgba(114, 46, 209, 0.1);
+}
+
+.tone-blue .budget-kpi-icon {
+  color: #1677ff;
+  background: rgba(22, 119, 255, 0.1);
+}
+
+.tone-green .budget-kpi-icon {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.1);
+}
+
+.tone-red .budget-kpi-icon {
+  color: #ff4d4f;
+  background: rgba(255, 77, 79, 0.1);
+}
+
+.budget-section-title::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  background: #1677ff;
+  margin-right: 8px;
+  vertical-align: -2px;
+  border-radius: 2px;
+}
+
+.budget-activity-card {
+  border-radius: 10px;
+}
+
+.budget-activity-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.budget-activity-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.budget-recharge-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
